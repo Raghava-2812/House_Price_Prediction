@@ -1,4 +1,4 @@
-# 🏡 SCT_ML_1 – House Price Prediction
+# 🏡House Price Prediction
 
 ## 📌 Objective
 Predict house prices based on features like the number of bedrooms and bathrooms using **Linear Regression**.
@@ -40,6 +40,3 @@ Achieved a good fit on the dataset with a reasonable error margin. The model sho
 ✅ Completed
 
 ---
-
-> This task is part of the **SkillCraft ML Internship** program.
-> 
