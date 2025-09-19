@@ -1,82 +1,45 @@
-# House Price Prediction Web App
+# House Price Prediction
 
-## Overview
-This is a simple and professional web application that predicts house prices based on key features of a property. The frontend uses HTML, CSS, and JavaScript, and the backend is powered by **Python Flask** with a **Linear Regression model** built using scikit-learn.
-
-The app allows users to input important property features such as lot area, ground living area, number of full bathrooms, garage area, and pool area, and returns an estimated house price.
+A web-based application to predict house prices using a **Linear Regression** model trained on historical housing data. Users can input key features of a house to estimate its market price.
 
 ---
 
 ## Features
 
-- Modern, professional UI with floating labels and gradient accents.
-- Responsive design for desktop and mobile devices.
-- Real-time prediction using a trained **Linear Regression model**.
-- Easy-to-use input fields with placeholders and units for clarity.
-- Clean error handling for network or server issues.
+- Predict house prices based on numeric features like lot area, living area, bathrooms, garage, and pool area.
+- Modern, responsive frontend with floating labels and professional styling.
+- Backend implemented with **Flask**, using a pre-trained Linear Regression model.
+- Handles missing values using **SimpleImputer**.
+- Cross-origin requests supported for seamless frontend-backend communication.
 
 ---
 
-## Technology Stack
+## Technologies Used
 
-**Frontend:**
-- HTML5 & CSS3
-- JavaScript (Fetch API)
-
-**Backend:**
-- Python 3.x
-- Flask (Web server)
-- scikit-learn (Linear Regression)
-- pandas (Data handling)
-- SimpleImputer (Handling missing values)
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Python, Flask
+- **Machine Learning:** scikit-learn (LinearRegression, SimpleImputer)
+- **Data Handling:** pandas
+- **Model Persistence:** joblib
+- **Version Control:** Git
 
 ---
 
-## Input Fields
+## Installation
 
-| Field        | Description                     | Units           | Example  |
-| ------------ | ------------------------------- | --------------- | -------- |
-| LotArea      | Lot area of the property        | Square feet     | 8450     |
-| GrLivArea    | Ground living area              | Square feet     | 1710     |
-| FullBath     | Number of full bathrooms        | Count           | 2        |
-| GarageArea   | Garage area                     | Square feet     | 548      |
-| PoolArea     | Pool area                       | Square feet     | 0        |
-
----
-
-## How to Run
-
-### Prerequisites
-- Python 3.x installed
-- pip installed
-
-### Install Dependencies
+1. **Clone the repository:**
 ```bash
-pip install flask pandas scikit-learn
+git clone https://github.com/Raghava-2812/House_Price_Prediction.git
+cd House_Price_Prediction
 ```
-### Start the Flask Server
+2. **Install dependencies:**
+```bah
+pip install flask pandas scikit-learn joblib flask-cors
+```
+3. **Run the Flask backend:**
 ```bash
 python app.py
 ```
-
-- The server will start at http://127.0.0.1:5000.
-
-### Open Frontend
-
-Open the index.html file in a web browser. Enter the house details in the input fields and click Predict Price to get an estimate.
-
-### Project Structure
-```bash
-House_Price_Prediction/
-│
-├── model/
-│   └── house_model.pkl
-│   └── imputer.pkl
-├── templates/
-│   └── index.html
-├── app.py
-├──House_price_predicton.py
-├── train.csv
-├── test.csv
-
-```
+4. You should see: Running on http://127.0.0.1:5000
+5. **Open frontend:**
+- Open index.html in your browser.
